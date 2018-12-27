@@ -233,6 +233,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/12/26/2018-12-26/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="闵誉文">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Owen's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/26/2018-12-26/" itemprop="url">Git教程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-26T18:43:42+08:00">
+                2018-12-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###初始教程<br>    1.git init 初始化一个仓库</p>
+<pre><code>2.git config --global user.name&quot;自己的用户名&quot;
+    git config --global user.email&quot;自己邮箱&quot;
+
+
+3.git config --list 查看git用户配置信息
+  git config --global --unset user.name
+
+
+
+4.git add ./ 添加文件到暂存区（放到门口）
+   git status 查看状态
+  git commit -m“提交描述” 将门口文件放到暂存区
+
+
+5.git log 查看提交日志
+  git log --oneline 查看简洁版日志
+  git reflog 查看所有的提交日至
+
+
+
+1.本地git init
+2.创建远程仓库 git clone
+6.新建忽略文件 .gitignore 先配置忽略文件 再添加
+7.版本回溯
+ git reset --hard版本号
+
+8.    git branch 线程  （新建线程）
+      git branch  （查询线程）
+      git checkout 线程名 （切换线程）
+
+
+9.    下拉 上传
+    git push 推送到远程仓库
+    git pull 远程仓库下拉
+
+
+10 克隆、
+git clone 仓库地址
+
+
+11. 工作中操作
+11.1先在远程创建一个仓库
+11.2通过git clone 仓库地址 将远程仓库克隆至本地
+11.3 git add ./ ---&gt;git commit -m &quot;&quot; git push
+</code></pre><p>##一定要先拉git pull 再推git push<br>    12 自己建一个远程仓库<br>           自己添加一些开发者<br>        制造一些冲突 然后解决冲突</p>
+<pre><code>13远程推分支到服务器
+git push --set-upstream origin 分支名
+    *:在多人合作的项目中经常会需要多分支合作 所以需要
+    1.创建分支
+    2.推送到远程仓库
+    3.合并后，再删除分支
+
+exp：    1.git checkout -b (创建分支并且切换过去)
+    2.git branch   查看一下
+    3.git status =&gt; git add ./ =&gt; git commit -m (&quot;备注&quot;)
+    4.git pull  先拉一下，如果之前原仓库没有这个分支会提示
+    5.git push --set-upstream origin 分支名
+    6.远仓库合并 然后删除分支
+    7.本地删除分支   先跳到其他分支 =&gt;再删除这个分支
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/12/25/MyChrismas/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -393,7 +572,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -401,6 +580,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
